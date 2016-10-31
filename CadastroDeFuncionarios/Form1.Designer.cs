@@ -109,6 +109,7 @@
             // 
             // txtBoxMostrarFunc
             // 
+            this.txtBoxMostrarFunc.Enabled = false;
             this.txtBoxMostrarFunc.Location = new System.Drawing.Point(167, 12);
             this.txtBoxMostrarFunc.Multiline = true;
             this.txtBoxMostrarFunc.Name = "txtBoxMostrarFunc";

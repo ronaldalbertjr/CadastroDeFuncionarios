@@ -48,6 +48,9 @@ namespace CadastroDeFuncionarios
             }
         } 
 
+        /// <summary>
+        /// Função para abrir o arquivo texto e inserir os dados do funcionário dentro desse arquivo texto
+        /// </summary>
         public void CadastrarFuncionario()
         {
             Stream arq = File.Open("funcionarios.txt", FileMode.Append);
@@ -57,7 +60,10 @@ namespace CadastroDeFuncionarios
             arq.Close();
             
         }
-
+        /// <summary>
+        /// Função para abrir o arquivo texto e retornar todos os funcionarios salvos dentro desse arquivo texto 
+        /// </summary>
+        /// <returns>Uma lista de funcionarios com todos os funcionarios cadastrados na arquivo texto</returns>
         public static List<Funcionario> MostrarFuncionario()
         {
             string line;
