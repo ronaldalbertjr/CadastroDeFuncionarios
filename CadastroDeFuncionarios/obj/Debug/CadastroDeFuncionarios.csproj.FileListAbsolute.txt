@@ -1,0 +1,9 @@
+C:\Users\ronald.junior\Documents\Visual Studio 2013\Projects\CadastroDeFuncionarios\CadastroDeFuncionarios\bin\Debug\CadastroDeFuncionarios.exe.config
+C:\Users\ronald.junior\Documents\Visual Studio 2013\Projects\CadastroDeFuncionarios\CadastroDeFuncionarios\bin\Debug\CadastroDeFuncionarios.exe
+C:\Users\ronald.junior\Documents\Visual Studio 2013\Projects\CadastroDeFuncionarios\CadastroDeFuncionarios\bin\Debug\CadastroDeFuncionarios.pdb
+C:\Users\ronald.junior\Documents\Visual Studio 2013\Projects\CadastroDeFuncionarios\CadastroDeFuncionarios\obj\Debug\CadastroDeFuncionarios.csprojResolveAssemblyReference.cache
+C:\Users\ronald.junior\Documents\Visual Studio 2013\Projects\CadastroDeFuncionarios\CadastroDeFuncionarios\obj\Debug\CadastroDeFuncionarios.Form1.resources
+C:\Users\ronald.junior\Documents\Visual Studio 2013\Projects\CadastroDeFuncionarios\CadastroDeFuncionarios\obj\Debug\CadastroDeFuncionarios.Properties.Resources.resources
+C:\Users\ronald.junior\Documents\Visual Studio 2013\Projects\CadastroDeFuncionarios\CadastroDeFuncionarios\obj\Debug\CadastroDeFuncionarios.csproj.GenerateResource.Cache
+C:\Users\ronald.junior\Documents\Visual Studio 2013\Projects\CadastroDeFuncionarios\CadastroDeFuncionarios\obj\Debug\CadastroDeFuncionarios.exe
+C:\Users\ronald.junior\Documents\Visual Studio 2013\Projects\CadastroDeFuncionarios\CadastroDeFuncionarios\obj\Debug\CadastroDeFuncionarios.pdb
