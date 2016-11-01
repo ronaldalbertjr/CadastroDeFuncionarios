@@ -16,26 +16,36 @@ namespace CadastroDeFuncionarios
         public Form1()
         {
             InitializeComponent();
-            
         }
 
         private void btnCadastrarFuncionario_Click(object sender, EventArgs e)
         {
-            Funcionario func = new Funcionario(txtBoxNome.Text, Convert.ToInt32(txtBoxIdade.Text), txtBoxEmail.Text);
+            Funcionario func = new Funcionario(txtBoxNome.Text, (int) nUpDownIdade.Value, txtBoxEmail.Text);
             func.CadastrarFuncionario();
         }
 
         private void btnMostrarFuncionarios_Click(object sender, EventArgs e)
         {
             string mostrarFuncionarios = "";
-            List<Funcionario> funcs = Funcionario.MostrarFuncionario();
+            List<Funcionario> funcs = Funcionario.SalvarFuncionario();
             foreach(Funcionario f in funcs)
             {
-                mostrarFuncionarios += "Nome: " + f.Nome + " Idade: " + f.Idade + " Email: " + f.Email + "\r\n";
+                mostrarFuncionarios += "Nome:" + f.Nome + " Idade:" + f.Idade + " Email:" + f.Email + "\r\n";
             }
-            Console.Write(mostrarFuncionarios);
             txtBoxMostrarFunc.Text = mostrarFuncionarios;
         }
+
+        private void btnBuscarFuncionario_Click(object sender, EventArgs e)
+        {
+            string especificoFuncionario = "";
+            List<Funcionario> funcs = Funcionario.BuscarFuncionario(Funcionario.SalvarFuncionario(), comboBoxFuncionarios.Text, txtBoxBuscar.Text);
+            foreach (Funcionario f in funcs)
+            {
+                especificoFuncionario += "Nome:" + f.Nome + " Idade:" + f.Idade + " Email:" + f.Email + "\r\n";
+            }
+            txtBoxMostrarFunc.Text = especificoFuncionario;
+        }
+       
 
     }
 }

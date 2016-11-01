@@ -64,7 +64,7 @@ namespace CadastroDeFuncionarios
         /// Função para abrir o arquivo texto e retornar todos os funcionarios salvos dentro desse arquivo texto 
         /// </summary>
         /// <returns>Uma lista de funcionarios com todos os funcionarios cadastrados na arquivo texto</returns>
-        public static List<Funcionario> MostrarFuncionario()
+        public static List<Funcionario> SalvarFuncionario()
         {
             string line;
             List<Funcionario> funcs = new List<Funcionario>();
@@ -78,6 +78,36 @@ namespace CadastroDeFuncionarios
             reader.Close();
             arq.Close();
             return funcs;
+        }
+
+        public static List<Funcionario> BuscarFuncionario(List<Funcionario> funcs, string item, string searchedItem)
+        {
+            List<Funcionario> funcionarios = new List<Funcionario>();
+            foreach(Funcionario f in funcs)
+            {
+                switch(item)
+                {
+                    case "Nome":
+                        if(f.Nome == searchedItem)
+                        {
+                            funcionarios.Add(f);
+                        }
+                        break;
+                    case "Idade":
+                        if (f.Idade == Convert.ToInt32(searchedItem))
+                        {
+                            funcionarios.Add(f);
+                        }
+                        break;
+                    case "Email":
+                        if (f.Email == searchedItem)
+                        {
+                            funcionarios.Add(f);
+                        }
+                        break;
+                }
+            }
+            return funcionarios;
         }
 
         public Funcionario(string nome, int idade, string email)
