@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace CadastroDeFuncionarios
 {
+    [Serializable]
     class Funcionario
     {
         private string nome;
@@ -54,9 +56,8 @@ namespace CadastroDeFuncionarios
         public void CadastrarFuncionario()
         {
             Stream arq = File.Open("funcionarios.txt", FileMode.Append);
-            StreamWriter writer = new StreamWriter(arq);
-            writer.WriteLine(nome+"|"+idade.ToString()+"|"+email);
-            writer.Close();
+            BinaryFormatter bf = new BinaryFormatter();
+            bf.Serialize(arq, this);
             arq.Close();
             
         }
@@ -69,11 +70,11 @@ namespace CadastroDeFuncionarios
             string line;
             List<Funcionario> funcs = new List<Funcionario>();
             Stream arq = File.Open("funcionarios.txt", FileMode.OpenOrCreate);
+            BinaryFormatter bf = new BinaryFormatter();
             StreamReader reader = new StreamReader(arq);
             while ((line = reader.ReadLine()) != null)
             {
-                string[] lines = line.Split('|');
-                funcs.Add(new Funcionario(lines[0], Convert.ToInt32(lines[1]), lines[2]));
+                funcs.Add((Funcionario) bf.Deserialize(arq));
             }
             reader.Close();
             arq.Close();

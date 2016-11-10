@@ -35,13 +35,13 @@
             this.txtBoxEmail = new System.Windows.Forms.TextBox();
             this.btnCadastrarFuncionario = new System.Windows.Forms.Button();
             this.btnMostrarFuncionarios = new System.Windows.Forms.Button();
-            this.txtBoxMostrarFunc = new System.Windows.Forms.TextBox();
             this.nUpDownIdade = new System.Windows.Forms.NumericUpDown();
             this.comboBoxFuncionarios = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtBoxBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscarFuncionario = new System.Windows.Forms.Button();
+            this.listFuncionarios = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.nUpDownIdade)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,15 +106,6 @@
             this.btnMostrarFuncionarios.UseVisualStyleBackColor = true;
             this.btnMostrarFuncionarios.Click += new System.EventHandler(this.btnMostrarFuncionarios_Click);
             // 
-            // txtBoxMostrarFunc
-            // 
-            this.txtBoxMostrarFunc.Location = new System.Drawing.Point(167, 12);
-            this.txtBoxMostrarFunc.Multiline = true;
-            this.txtBoxMostrarFunc.Name = "txtBoxMostrarFunc";
-            this.txtBoxMostrarFunc.ReadOnly = true;
-            this.txtBoxMostrarFunc.Size = new System.Drawing.Size(414, 324);
-            this.txtBoxMostrarFunc.TabIndex = 8;
-            // 
             // nUpDownIdade
             // 
             this.nUpDownIdade.Location = new System.Drawing.Point(10, 66);
@@ -169,18 +160,26 @@
             this.btnBuscarFuncionario.UseVisualStyleBackColor = true;
             this.btnBuscarFuncionario.Click += new System.EventHandler(this.btnBuscarFuncionario_Click);
             // 
+            // listFuncionarios
+            // 
+            this.listFuncionarios.FormattingEnabled = true;
+            this.listFuncionarios.Location = new System.Drawing.Point(146, 12);
+            this.listFuncionarios.Name = "listFuncionarios";
+            this.listFuncionarios.Size = new System.Drawing.Size(435, 329);
+            this.listFuncionarios.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(593, 348);
+            this.Controls.Add(this.listFuncionarios);
             this.Controls.Add(this.btnBuscarFuncionario);
             this.Controls.Add(this.txtBoxBuscar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBoxFuncionarios);
             this.Controls.Add(this.nUpDownIdade);
-            this.Controls.Add(this.txtBoxMostrarFunc);
             this.Controls.Add(this.btnMostrarFuncionarios);
             this.Controls.Add(this.btnCadastrarFuncionario);
             this.Controls.Add(this.txtBoxEmail);
@@ -205,13 +204,13 @@
         private System.Windows.Forms.TextBox txtBoxEmail;
         private System.Windows.Forms.Button btnCadastrarFuncionario;
         private System.Windows.Forms.Button btnMostrarFuncionarios;
-        private System.Windows.Forms.TextBox txtBoxMostrarFunc;
         private System.Windows.Forms.NumericUpDown nUpDownIdade;
         private System.Windows.Forms.ComboBox comboBoxFuncionarios;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtBoxBuscar;
         private System.Windows.Forms.Button btnBuscarFuncionario;
+        private System.Windows.Forms.ListBox listFuncionarios;
     }
 }
 

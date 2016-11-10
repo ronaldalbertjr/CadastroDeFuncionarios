@@ -32,7 +32,7 @@ namespace CadastroDeFuncionarios
             {
                 mostrarFuncionarios += "Nome:" + f.Nome + " Idade:" + f.Idade + " Email:" + f.Email + "\r\n";
             }
-            txtBoxMostrarFunc.Text = mostrarFuncionarios;
+            listFuncionarios.Items.Add(mostrarFuncionarios);
         }
 
         private void btnBuscarFuncionario_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace CadastroDeFuncionarios
             {
                 especificoFuncionario += "Nome:" + f.Nome + " Idade:" + f.Idade + " Email:" + f.Email + "\r\n";
             }
-            txtBoxMostrarFunc.Text = especificoFuncionario;
+            listFuncionarios.Items.Add(especificoFuncionario);
         }
        
 
